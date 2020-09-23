@@ -16,7 +16,6 @@ nav {
     min-height: 8vh;
     width: 100%;
     background-color: gray;
-    position: fixed;
 }
 
 .logo {
@@ -113,12 +112,15 @@ nav {
     font-size: 2rem;
 }
 
+.animate__animated.animate__slideInDown {
+    --animate-duration: .5s;
+}
+
 
 /** About me **/
 
 .about-section {
     padding: 10rem 2rem;
-    background-color: gray;
 }
 
 .about-section h2 {
