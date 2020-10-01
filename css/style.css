@@ -134,8 +134,26 @@ nav {
 
 /** About me **/
 
+@media screen and (max-width: 568px) {
+    .about-section {
+        padding: 0rem 2rem 2rem 0rem;
+        position: relative;
+    }
+    .about_me-descript {
+        padding: none;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+    }
+    .about_me-p {
+        padding: none;
+        bottom: 100px;
+    }
+}
+
 .about-section {
-    padding: 5rem 2rem;
+    margin: auto;
+    padding: 2rem 9rem;
 }
 
 .about-section h2 {
@@ -153,7 +171,6 @@ nav {
 }
 
 .description {
-    display: flex;
     padding: 4rem 2rem;
     flex-direction: column;
     width: 100%;
@@ -161,13 +178,21 @@ nav {
 
 .about_me-descript {
     display: flex;
-    flex-direction: left;
     font-size: 25px;
-    padding: 2rem 2rem;
+    padding: none;
 }
 
-.about_me-descript img {
+.about_me-p {
+    display: flex;
+    align-items: left;
+    padding: 2rem;
+    margin: auto;
+}
+
+.img-me {
     border-radius: 50%;
+    height: 300px;
+    width: 300px;
 }
 
 .descript_2 {
