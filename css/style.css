@@ -159,10 +159,15 @@ nav {
     width: 100%;
 }
 
-.about_me-descript p {
+.about_me-descript {
     display: flex;
     flex-direction: left;
     font-size: 25px;
+    padding: 2rem 2rem;
+}
+
+.about_me-descript img {
+    border-radius: 50%;
 }
 
 .descript_2 {
@@ -181,7 +186,7 @@ nav {
 }
 
 .des_framework {
-    padding: 2rem 2rem;
+    padding: 4rem 4rem;
 }
 
 .des_framework li {
@@ -190,7 +195,7 @@ nav {
 }
 
 .des_lan {
-    padding: 2rem;
+    padding: none;
     flex-direction: flex-end;
 }
 
@@ -239,5 +244,9 @@ nav {
     display: flex;
     justify-content: center;
     padding: 4rem 2rem;
+    background-color: #293241;
+}
+
+.contact-section h2 {
     background-color: #293241;
 }
