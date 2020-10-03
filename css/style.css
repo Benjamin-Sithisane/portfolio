@@ -146,14 +146,14 @@ nav {
         position: relative;
     }
     .about_me-p {
-        padding: none;
         bottom: 100px;
+        font-size: 20px;
     }
 }
 
 .about-section {
-    margin: auto;
-    padding: 2rem 9rem;
+    margin: 0px;
+    padding: 0px;
 }
 
 .about-section h2 {
