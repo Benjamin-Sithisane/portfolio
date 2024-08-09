@@ -16,14 +16,8 @@ function scrollToElement(elementId) {
     })
 }
 
-function mobileNav() {
-    const x = document.getElementById("links");
-
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
+function toggleMobileMenu(menu) {
+    menu.classList.toggle('open');
 }
 
 //Animate on open

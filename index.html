@@ -12,30 +12,24 @@
 </head>
 <body>
     <header>
-        <nav class="navbar">
-                <a onclick="scrollToElement('hero')">
-                    <h1 class="slideUp">bsith</h1>
-                </a>
-                <div class="links mobile-nav" id="links">
-                    <ul>
-                        <li>
-                            <a class="slideUp" onclick="scrollToElement('about')">About</a>
-                        </li>
-                        <li>
-                            <a class="slideUp" onclick="scrollToElement('projects')">Projects</a>
-                        </li>
-                        <li>
-                            <a class="slideUp" onclick="scrollToElement('contact')">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                
-                <div id="line-grid">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                </div>
+        <div class="slideUp" id="logo">bsith</div>
+        <nav>
+            <ul>
+                <li><a class="slideUp" onclick="scrollToElement('about')">About</a></li>
+                <li><a class="slideUp" onclick="scrollToElement('projects')">Projects</a></li>
+                <li><a class="slideUp" onclick="scrollToElement('contact')">Contact</a></li>
+            </ul>
         </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a class="slideUp" onclick="scrollToElement('about')">About</a></li>
+                <li><a class="slideUp" onclick="scrollToElement('projects')">Projects</a></li>
+                <li><a class="slideUp" onclick="scrollToElement('contact')">Contact</a></li>
+            </ul>
+        </div>
     </header>
     <main class="main-body">
         <div class="main-wrapper">
