@@ -17,9 +17,13 @@ function scrollToElement(elementId) {
 }
 
 function mobileNav() {
-    const mobileNavHeader = document.querySelector(".line-grid");
+    const x = document.getElementById("links");
 
-        //dootit
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
 }
 
 //Animate on open
@@ -41,25 +45,4 @@ function animateElementsInView() {
     });
 }
 
-
-
 animateElementsInView();
-
-
-/*
-function handleScroll() {
-    window.addEventListener('scroll', () => {
-        if(window.scrollY === 0) {
-            elements.forEach((el) => {
-                el.classList.add('animate')
-                console.log('animate')
-            })
-        } else {
-            animateElementsInView()
-        }
-    });
-}
-
-handleScroll();
-
-*/
