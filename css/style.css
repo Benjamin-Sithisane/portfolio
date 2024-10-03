@@ -269,7 +269,7 @@ footer a {
 }
 
 /* Mobile View */
-@media (min-width: 400px) and (max-width: 900px) {
+@media (min-width: 150px) and (max-width: 900px) {
     header nav {
         display: none;
       }
