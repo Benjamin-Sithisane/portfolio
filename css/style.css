@@ -134,7 +134,7 @@ ul {
     margin-bottom: 10px;
 }
 
-.projects h1 {
+.projects > h1 {
     margin: 0px 0px 25px 0px;
     display: flex;
     justify-content: center;
@@ -239,29 +239,28 @@ footer a {
 /* Projects */
 .projects {
     padding: 0px 10px;
-    height: 120vh;
+    height: 100vh;
     overflow: hidden;
 }
 
 .projects-showcase {
-    display: grid;
-    height: 86vh;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    grid-template-rows: 1fr 1fr ;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
 }
 
+
 .item-1 {
-    grid-area: 1 / 1 / span 1 / span 3;
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    border-radius: 10px;
     border-style: solid;
     background-color: #ffffff;
 }
 
-.item-1-content {
-    display: flex;
-    align-items: center;
-    padding: 25px;
-}
 
 div.item-1-content > h1 {
     margin-right: 50px;
@@ -269,18 +268,25 @@ div.item-1-content > h1 {
 
 div.item-1-content > p {
     display: flex;
-    font-size: 16px;
+    font-size: 2px;
     height: fit-content;
 }
 
 .item-2 {
-    grid-area: 2 / 1 / 5 / 3;
+    height: 350px;
+    width: 500px;
     border-style: solid;
     background-color: #ffff;
     margin: 0;
 }
 
-.item-2-content {
+.item-2 > img {
+    height: fit-content;
+    width: 100%;
+    filter: brightness(55%)
+}   
+
+.card-header {
     display: flex;
     justify-content: flex-end;
     border-bottom: solid;
@@ -289,24 +295,12 @@ div.item-1-content > p {
     padding: 15px;
 }
 
-.card-header {
-    display: flex;
-}
-
-.item-2 > img {
-    height: auto;
-    width: 100%;
-    filter: brightness(55%)
-}
-
 .item-2-content > a:hover {
     color: #ffff;
     transition: .5s;
 }
 
 .item-3 {
-    grid-row: 2 / 5;
-    grid-column: 3 / 5;
     border-style: solid;
     display: flex;
     padding: 25px;
@@ -314,13 +308,14 @@ div.item-1-content > p {
 
 .item-3-content > p {
     height: fit-content ;
-    font-size: 20px;
+    font-size: 17px;
     justify-content: flex-start;
 }
 
 .item-3-content > ul {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 10px;
     justify-content: center;
 }
 
@@ -470,19 +465,17 @@ div.item-1-content > p {
         padding: 10px;
     }
 
-    .item-1-content > h1 {
-        display: flex;
-        font-size: 22px;
-        justify-content: center;
+    .item-1 > h1 {
+        margin-bottom: 0px;
     }
 
-    div.item-1-content > p {
+    .item-1-content > p {
         display: flex;
         font-size: 12px;
     }
 
     .item-2 > img {
-        height: 250px;
+        height: 100px;
     }
 
     .item-3-content > ul {
