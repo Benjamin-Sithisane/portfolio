@@ -22,8 +22,7 @@ header {
     position: fixed;
     width: 100%;
     background-color: #ffffff;
-    border-bottom: #000000;
-    border-style: solid;
+    border-bottom: solid #000000;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     z-index: 1;
     background-color: var(--mainAccent);
@@ -113,7 +112,7 @@ ul {
     left: 0;
     height: calc(100vh - 50px);
     width: 100%;
-    background-color: #ffff;
+    background-color: var(--mainAccent);
 }
   
 .mobile-menu li {
