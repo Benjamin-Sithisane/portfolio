@@ -512,6 +512,45 @@ div.item-1-content > p {
     height: 25px;
 }
 
+/* Utils */
+.container {
+    background-color: #FFFFFF;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid;
+    border-color: #000000;
+    border-radius: 10px;
+    height: 200px;
+    width: 500px;
+}
+
+.open-icon {
+    height: 25px;
+    width: 25px;
+}
+
+.open-icon:hover {
+    color: #ffffff;
+}
+
+.box-shadow {
+    box-shadow: 5px 5px;
+}
+
+.slideUp {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.animate {
+    transform: translateY(0);
+    opacity: 1;
+}
+
 /* Text Classes */
 .text-xxl {
     font-size: 8rem;
@@ -677,6 +716,17 @@ div.item-1-content > p {
     /* Contact */
     .contact {
         padding: 0px 25px;
+    }
+
+    .contact-header-styling {
+        width: 75%;
+    }
+
+    .container {
+        padding: 10px;
+        font-size: 17px;
+        height: 250px;
+        width: 75%;
     }
 }
 
@@ -849,11 +899,14 @@ div.item-1-content > p {
     
     .pro2-item-2 {
         border-radius: 10px;
+        padding: 25px;
+        font-size: 17px;
         border: solid;
-        height: 300px;
+        height: fit-content;
         display: flex;
         align-items: center;
         justify-content: center;
+        order: 1;
     }
 
     .pro2-item-2 > ul {
@@ -871,6 +924,24 @@ div.item-1-content > p {
     }
 
     /* Contact */
+    .contact {
+        display: flex;
+        font-size: 17px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-header-styling {
+        width: 75%;
+    }
+
+    .container {
+        padding: 10px;
+        font-size: 17px;
+        height: 250px;
+        width: 75%;
+    }
+
     .social-icons {
         display: flex;
         flex-direction: row;
@@ -878,6 +949,8 @@ div.item-1-content > p {
         align-content: flex-end;
         gap: 50px;
     }
+
+    /* Utils */
     
     /* Text Classes */
     .text-xxl {
@@ -894,43 +967,3 @@ div.item-1-content > p {
     }
 }
 /* End of Mobile */
-
-/* Utils */
-
-.container {
-    background-color: #FFFFFF;
-    margin-top: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: solid;
-    border-color: #000000;
-    border-radius: 10px;
-    height: 200px;
-    width: 500px;
-}
-
-.open-icon {
-    height: 25px;
-    width: 25px;
-}
-
-.open-icon:hover {
-    color: #ffffff;
-}
-
-.box-shadow {
-    box-shadow: 5px 5px;
-}
-
-.slideUp {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: transform 0.5s, opacity 0.5s;
-}
-
-.animate {
-    transform: translateY(0);
-    opacity: 1;
-}
