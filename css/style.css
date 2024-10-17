@@ -900,7 +900,6 @@ div.item-1-content > p {
     .pro2-item-2 {
         border-radius: 10px;
         padding: 25px;
-        font-size: 17px;
         border: solid;
         height: fit-content;
         display: flex;
@@ -912,6 +911,10 @@ div.item-1-content > p {
     .pro2-item-2 > ul {
         height: fit-content;
         flex-direction: row;
+    }
+
+    .pro2-item-2 > ul li {
+        height: fit-content;
     }
     
     .pro2-item-3 {
